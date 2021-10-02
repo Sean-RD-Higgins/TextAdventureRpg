@@ -21,3 +21,4 @@ D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRp
 D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.dll
 D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\ref\TextAdventureRpgLibrary.dll
 D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.pdb
+D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.csproj.AssemblyReference.cache
