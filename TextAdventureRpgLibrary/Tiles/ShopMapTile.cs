@@ -41,8 +41,9 @@ namespace TextAdventureRpgLibrary
             int costPerItem = 20;
             if (int.TryParse(additionalInput, out int purchaseCount))
             {
+                // TODO - this can be easily configured to allow the purchase of certain items
                 int totalCost = purchaseCount * costPerItem;
-                if (currentWorld.PlayerOne.Currency > totalCost)
+                if (currentWorld.PlayerOne.Currency >= totalCost)
                 {
                     currentWorld.PlayerOne.Currency -= totalCost;
                     currentWorld.PlayerOne.PotionCount += purchaseCount;
