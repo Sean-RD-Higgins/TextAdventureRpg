@@ -11,5 +11,6 @@
         public static MapAction GoSouth { get { return new MapAction("Go South"); } }
         public static MapAction GoWest { get { return new MapAction("Go West"); } }
         public static MapAction Look { get { return new MapAction("Look"); } }
+        public static MapAction Mirror { get { return new MapAction("Mirror"); } }
     }
 }
