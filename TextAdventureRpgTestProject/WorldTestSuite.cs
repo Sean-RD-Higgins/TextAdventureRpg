@@ -19,11 +19,11 @@ namespace TextAdventureRpgTestProject
             _world.DisplayActionList();
             _world.GetArrivalText();
             _world.GetHelpText();
-            _world.GetLookText();
-            _world.GoEast();
-            _world.GoNorth();
-            _world.GoSouth();
-            _world.GoWest();
+            _world.GetLookText(string.Empty, _world);
+            _world.GoEast(string.Empty, _world);
+            _world.GoNorth(string.Empty, _world);
+            _world.GoSouth(string.Empty, _world);
+            _world.GoWest(string.Empty, _world);
         }
     }
 }
