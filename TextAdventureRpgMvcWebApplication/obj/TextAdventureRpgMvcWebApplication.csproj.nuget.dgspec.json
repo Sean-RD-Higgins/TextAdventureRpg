@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgMvcWebApplication\\TextAdventureRpgMvcWebApplication.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgLibrary\\TextAdventureRpgLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgLibrary\\TextAdventureRpgLibrary.csproj",
+        "projectName": "TextAdventureRpgLibrary",
+        "projectPath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgLibrary\\TextAdventureRpgLibrary.csproj",
+        "packagesPath": "C:\\Users\\Seans\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Seans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgMvcWebApplication\\TextAdventureRpgMvcWebApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgMvcWebApplication\\TextAdventureRpgMvcWebApplication.csproj",
+        "projectName": "TextAdventureRpgMvcWebApplication",
+        "projectPath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgMvcWebApplication\\TextAdventureRpgMvcWebApplication.csproj",
+        "packagesPath": "C:\\Users\\Seans\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgMvcWebApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Seans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgLibrary\\TextAdventureRpgLibrary.csproj": {
+                "projectPath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgLibrary\\TextAdventureRpgLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

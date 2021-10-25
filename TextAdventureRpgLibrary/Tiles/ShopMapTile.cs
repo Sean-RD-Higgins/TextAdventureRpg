@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TextAdventureRpgLibrary
 {
@@ -35,11 +36,13 @@ namespace TextAdventureRpgLibrary
             return actionCollection;
         }
 
-        public IEnumerable<string> Buy(string additionalInput, World currentWorld)
+        public IEnumerable<string> Buy(IEnumerable<string> additionalInput, World currentWorld)
         {
+            string purchaseCountText = new List<string>(collection: additionalInput).First();
+
             // TODO - Do logic if the shop is closed or not.
             int costPerItem = 20;
-            if (int.TryParse(additionalInput, out int purchaseCount))
+            if (int.TryParse(purchaseCountText, out int purchaseCount))
             {
                 // TODO - this can be easily configured to allow the purchase of certain items
                 int totalCost = purchaseCount * costPerItem;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "10C5jjxECrtqjpdERXbMHY3JfnPgOVDnxHJ2i7lrs7PEVFZODjcyCFdA8b2dsc7fpUhcSdVudBaQEFt3eg23dQ==",
+  "dgSpecHash": "IroIFqDSRmoOqEkh9f5/JFP6TBUE4R1qbFkAbRpgdrNw5OGlyDYo0Ds6U8iCWjptSUym1ODbRZQpKq6tqG7hXg==",
   "success": true,
-  "projectFilePath": "D:\\git\\TextAdventureRpg\\TextAdventureRpgTestProject\\TextAdventureRpgTestProject.csproj",
+  "projectFilePath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgTestProject\\TextAdventureRpgTestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Seans\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Seans\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

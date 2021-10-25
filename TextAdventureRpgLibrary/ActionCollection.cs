@@ -10,22 +10,22 @@ namespace TextAdventureRpgLibrary
     {
         public ActionCollection()
         {
-            _actionToFunctionMap = new Dictionary<string, Func<string, World, IEnumerable<string>>>();
+            _actionToFunctionMap = new Dictionary<string, Func<IEnumerable<string>, World, IEnumerable<string>>>();
         }
 
-        private Dictionary<string, Func<string, World, IEnumerable<string>>> _actionToFunctionMap;
+        private Dictionary<string, Func<IEnumerable<string>, World, IEnumerable<string>>> _actionToFunctionMap;
 
         public string[] GetActionList()
         { 
             return _actionToFunctionMap.Select(pair => pair.Key).ToArray();
         }   
 
-        public void Add(string actionText, Func<string, World, IEnumerable<string>> actionFunction)
+        public void Add(string actionText, Func<IEnumerable<string>, World, IEnumerable<string>> actionFunction)
         {
             _actionToFunctionMap.Add(CleanseKey(actionText), actionFunction);
         }
 
-        public Func<string, World, IEnumerable<string>> GetActionFunction(string actionText)
+        public Func<IEnumerable<string>, World, IEnumerable<string>> GetActionFunction(string actionText)
         {
             return _actionToFunctionMap.GetValueOrDefault(CleanseKey(actionText), null);
         }
