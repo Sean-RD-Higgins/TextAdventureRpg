@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 
 namespace TextAdventureRpgLibrary
 {
@@ -29,6 +30,7 @@ namespace TextAdventureRpgLibrary
 
         #region Properties
 
+        [JsonIgnore]
         public IMapTile[,] TileMatrix { get; set; }
         public ActionCollection Actions { get; set; }
         public Player PlayerOne { get; set; }
@@ -40,19 +42,20 @@ namespace TextAdventureRpgLibrary
 
         public IEnumerable<string> GetResult(string actionText)
         {
-            string actionWord = actionText.Split(" ").First();
-            string additionalInput = actionText.Split(" ").Last();
+            IEnumerable<string> actionWordList = actionText.Split(" ");
+            string actionWord = actionWordList.First();
+            IEnumerable<string> additionalList = actionWordList.Skip(1);
 
             var tileActionFunction = GetCurrentTile().Actions.GetActionFunction(actionWord);
             if(tileActionFunction != null)
             {
-                return tileActionFunction.Invoke(additionalInput, this);
+                return tileActionFunction.Invoke(additionalList, this);
             }
 
-            var worldActionFunction = Actions.GetActionFunction(actionText);
+            var worldActionFunction = Actions.GetActionFunction(actionWord);
             if(worldActionFunction != null)
             {
-                return worldActionFunction.Invoke(additionalInput, this);
+                return worldActionFunction.Invoke(additionalList, this);
             }
             return GetHelpText();
         }
@@ -74,7 +77,7 @@ namespace TextAdventureRpgLibrary
             return GetCurrentTile().ArrivalText;
         }
 
-        public IEnumerable<string> GetLookText(string additionalInput, World world)
+        public IEnumerable<string> GetLookText(IEnumerable<string> additionalInput, World world)
         {
             return GetCurrentTile().LookText;
         }
@@ -84,7 +87,7 @@ namespace TextAdventureRpgLibrary
             return GetCurrentTile().ArrivalText;
         }
 
-        public IEnumerable<string> GoNorth(string additionalInput, World world)
+        public IEnumerable<string> GoNorth(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.YLocation == 0)
             {
@@ -99,7 +102,7 @@ namespace TextAdventureRpgLibrary
             return dialogueText;
         }
 
-        public IEnumerable<string> GoEast(string additionalInput, World world)
+        public IEnumerable<string> GoEast(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.XLocation == TileMatrix.GetLength(1) - 1)
             {
@@ -114,7 +117,7 @@ namespace TextAdventureRpgLibrary
             return dialogueText;
         }
 
-        public IEnumerable<string> GoSouth(string additionalInput, World world)
+        public IEnumerable<string> GoSouth(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.YLocation == TileMatrix.GetLength(1) - 1)
             {
@@ -129,7 +132,7 @@ namespace TextAdventureRpgLibrary
             return dialogueText;
         }
 
-        public IEnumerable<string> GoWest(string additionalInput, World world)
+        public IEnumerable<string> GoWest(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.XLocation == 0)
             {
@@ -144,7 +147,7 @@ namespace TextAdventureRpgLibrary
             return dialogueText;
         }
 
-        public IEnumerable<string> GetMirrorText(string additionalInput, World world)
+        public IEnumerable<string> GetMirrorText(IEnumerable<string> additionalInput, World world)
         {
             return new string[] { $"You gaze into the mirror for some \"self-reflection.\"  " +
                 $"Location: {PlayerOne.XLocation}, {PlayerOne.YLocation}.  " +
