@@ -8,6 +8,6 @@ namespace TextAdventureRpgLibrary
     {
         IEnumerable<string> ArrivalText { get; set; }
         IEnumerable<string> LookText { get; set; }
-        public ActionCollection Actions { get; set; }
+        ActionCollection Actions { get; set; }
     }
 }

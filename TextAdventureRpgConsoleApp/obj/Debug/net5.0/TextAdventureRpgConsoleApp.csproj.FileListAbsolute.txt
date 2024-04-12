@@ -41,7 +41,6 @@ C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgCon
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net5.0\TextAdventureRpgConsoleApp.runtimeconfig.json
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net5.0\TextAdventureRpgConsoleApp.runtimeconfig.dev.json
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net5.0\TextAdventureRpgConsoleApp.dll
-C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net5.0\ref\TextAdventureRpgConsoleApp.dll
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net5.0\TextAdventureRpgConsoleApp.pdb
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net5.0\TextAdventureRpgLibrary.dll
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net5.0\TextAdventureRpgLibrary.pdb
@@ -55,3 +54,4 @@ C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgCon
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net5.0\TextAdventureRpgConsoleApp.pdb
 C:\Users\Seans\source\repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net5.0\TextAdventureRpgConsoleApp.genruntimeconfig.cache
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net5.0\TextAdventureRpgConsoleApp.csproj.CopyComplete
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net5.0\refint\TextAdventureRpgConsoleApp.dll

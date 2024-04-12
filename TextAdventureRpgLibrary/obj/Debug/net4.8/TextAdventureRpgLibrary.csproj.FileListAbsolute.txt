@@ -1,0 +1,12 @@
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\bin\Debug\net4.8\TextAdventureRpgLibrary.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\bin\Debug\net4.8\TextAdventureRpgLibrary.pdb
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\bin\Debug\net4.8\Newtonsoft.Json.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.csproj.AssemblyReference.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.AssemblyInfoInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.AssemblyInfo.cs
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.sourcelink.json
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdve.4CBBD406.Up2Date
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net4.8\TextAdventureRpgLibrary.pdb

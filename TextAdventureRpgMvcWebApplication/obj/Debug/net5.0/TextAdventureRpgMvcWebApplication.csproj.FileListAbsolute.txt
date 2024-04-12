@@ -5,7 +5,6 @@ C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvc
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\bin\Debug\net5.0\TextAdventureRpgMvcWebApplication.runtimeconfig.json
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\bin\Debug\net5.0\TextAdventureRpgMvcWebApplication.runtimeconfig.dev.json
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\bin\Debug\net5.0\TextAdventureRpgMvcWebApplication.dll
-C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\bin\Debug\net5.0\ref\TextAdventureRpgMvcWebApplication.dll
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\bin\Debug\net5.0\TextAdventureRpgMvcWebApplication.pdb
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\bin\Debug\net5.0\TextAdventureRpgMvcWebApplication.Views.dll
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\bin\Debug\net5.0\TextAdventureRpgMvcWebApplication.Views.pdb
@@ -20,7 +19,6 @@ C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvc
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\TextAdventureRpgMvcWebApplication.RazorAssemblyInfo.cache
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\TextAdventureRpgMvcWebApplication.RazorAssemblyInfo.cs
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\staticwebassets\TextAdventureRpgMvcWebApplication.StaticWebAssets.Manifest.cache
-C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\staticwebassets\TextAdventureRpgMvcWebApplication.StaticWebAssets.xml
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\scopedcss\bundle\TextAdventureRpgMvcWebApplication.styles.css
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\TextAdventureRpgMvcWebApplication.TagHelpers.input.cache
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\TextAdventureRpgMvcWebApplication.TagHelpers.output.cache
@@ -40,3 +38,4 @@ C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvc
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\ref\TextAdventureRpgMvcWebApplication.dll
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\TextAdventureRpgMvcWebApplication.pdb
 C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\TextAdventureRpgMvcWebApplication.genruntimeconfig.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net5.0\refint\TextAdventureRpgMvcWebApplication.dll

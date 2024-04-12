@@ -1,0 +1,8 @@
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.csproj.AssemblyReference.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.exe.config
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.AssemblyInfoInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.AssemblyInfo.cs
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.csproj.CoreCompileInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgMvcWebApplication\obj\Debug\net4.8\TextAdventureRpgMvcWebApplication.sourcelink.json

@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.Build.Framework;
+using NUnit.Framework.Internal;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using TextAdventureRpgLibrary;
 using TextAdventureRpgMvcWebApplication.Models;
 
@@ -16,7 +18,7 @@ namespace TextAdventureRpgMvcWebApplication.Controllers
 {
     public class HomeController : Controller
     {
-        private IServiceProvider _services;
+        private readonly IServiceProvider _services;
         private readonly ILogger<HomeController> _logger;
         private HomeModel _model;
 
@@ -26,7 +28,7 @@ namespace TextAdventureRpgMvcWebApplication.Controllers
             _logger = logger;
             _model = GetDefaultModel();
             byte[] jsonByteList = null;
-            _services.GetRequiredService<IHttpContextAccessor>().HttpContext.Session.TryGetValue("SessionKeyName", out jsonByteList);
+            ((IHttpContextAccessor)_services.GetService(typeof(IHttpContextAccessor))).HttpContext.Session.TryGetValue("SessionKeyName", out jsonByteList);
 
             if(jsonByteList != null)
             {
@@ -100,7 +102,7 @@ namespace TextAdventureRpgMvcWebApplication.Controllers
             }
             // TODO - Have there be a cursor that's saved too so this is only showing up to line number cursor broken up by linefeed.
             ViewData["ConsoleOutput"] = _model.ConsoleOutput.ToString();
-            return View();
+            return (IActionResult)View();
         }
 
         [HttpPost]
@@ -116,12 +118,12 @@ namespace TextAdventureRpgMvcWebApplication.Controllers
 
             _services.GetRequiredService<IHttpContextAccessor>().HttpContext.Session.Set("SessionKeyName", Encoding.Unicode.GetBytes(JsonSerializer.Serialize(_model.CurrentWorld.PlayerOne)));
 
-            return View();
+            return (IActionResult)View();
         }
 
         public IActionResult Privacy()
         {
-            return View();
+            return (IActionResult)View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

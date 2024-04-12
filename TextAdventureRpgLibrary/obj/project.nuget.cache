@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mtU3u4OfSEl5vWbEUstivvmLITPHGe5Qyl7/OHWRGyxr4Catiw9NtY+4EZLAcTEqFP00jnqQGa6VCaJ0g2hQkQ==",
+  "dgSpecHash": "p+pioWbsp5iOqEBpBVOr/kPonKOviAy3Uz9MDUVuSt7+vCjQv91nRe5yCmGwiyurVeAjELuHqMTjEP48aYCTVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgLibrary\\TextAdventureRpgLibrary.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Seans\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

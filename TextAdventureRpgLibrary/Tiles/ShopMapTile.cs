@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace TextAdventureRpgLibrary
 {
+    [Serializable]
     public class ShopMapTile : IMapTile
     {
         public ShopMapTile()
@@ -16,6 +17,7 @@ namespace TextAdventureRpgLibrary
 
         public ShopMapTile(string[] arrivalText, string[] lookText, TimeSpan shopTimeOpen, TimeSpan shopTimeClose)
         {
+            // TODO - Turn this into parameters to use.
             shopTimeOpen = new TimeSpan(7, 30, 0);
             shopTimeClose = new TimeSpan(12+6, 00, 0);
             DateTime currentDateTime = DateTime.Now;

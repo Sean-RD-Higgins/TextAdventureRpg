@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json.Serialization;
 
 namespace TextAdventureRpgLibrary
 {
+    [Serializable]
     public class World
     {
 
@@ -42,7 +43,7 @@ namespace TextAdventureRpgLibrary
 
         public IEnumerable<string> GetResult(string actionText)
         {
-            IEnumerable<string> actionWordList = actionText.Split(" ");
+            IEnumerable<string> actionWordList = actionText.Split(' ');
             string actionWord = actionWordList.First();
             IEnumerable<string> additionalList = actionWordList.Skip(1);
 
@@ -62,8 +63,8 @@ namespace TextAdventureRpgLibrary
 
         public IEnumerable<string> GetHelpText()
         {
-            string worldActions = string.Join(',', Actions.GetActionList());
-            string tileActions = string.Join(',', GetCurrentTile().Actions.GetActionList());
+            string worldActions = string.Join(",", Actions.GetActionList());
+            string tileActions = string.Join(",", GetCurrentTile().Actions.GetActionList());
             return new string[] { $"{PREPEND_HELP_TEXT}{worldActions}", tileActions };
         }
 
