@@ -22,3 +22,15 @@ D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRp
 D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\ref\TextAdventureRpgLibrary.dll
 D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.pdb
 D:\git\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.csproj.AssemblyReference.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\bin\Debug\net5.0\TextAdventureRpgLibrary.deps.json
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\bin\Debug\net5.0\TextAdventureRpgLibrary.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\bin\Debug\net5.0\TextAdventureRpgLibrary.pdb
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.csproj.AssemblyReference.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.AssemblyInfoInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.AssemblyInfo.cs
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\refint\TextAdventureRpgLibrary.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\TextAdventureRpgLibrary.pdb
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgLibrary\obj\Debug\net5.0\ref\TextAdventureRpgLibrary.dll

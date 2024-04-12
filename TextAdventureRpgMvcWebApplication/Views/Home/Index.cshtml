@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form asp-controller="Home" asp-action="Index">
+    <p id="console-output"> @ViewData["ConsoleOutput"] </p>
+    <input id="free-text-input" name="UserInput" autofocus="autofocus" />
+    <input type="submit" id="submit-action" value="Submit" />
+</form>

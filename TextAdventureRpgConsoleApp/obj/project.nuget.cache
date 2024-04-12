@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jHb5m6e0lZKcRm5C64N3yag4nw9oF2+8EZKPDv2JxuqZFVPr0VDuitsAIz82WgLAXfemxRyEQSUDNSoLytivYg==",
+  "dgSpecHash": "AOlljzXjlZOaPVEuGxg5ZnMgW1B3KVMWe1chAXp5aogGZGrm008115+4aQrt/Wq+cksoYhdxc7OPoKej9jyILg==",
   "success": true,
-  "projectFilePath": "D:\\git\\TextAdventureRpg\\TextAdventureRpgConsoleApp\\TextAdventureRpgConsoleApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Seans\\Source\\Repos\\Sean-RD-Higgins\\TextAdventureRpg\\TextAdventureRpgConsoleApp\\TextAdventureRpgConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Seans\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,48 +1,41 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TextAdventureRpgLibrary
 {
+    [Serializable]
     public class World
     {
 
         public World()
         {
-            TileMatrix = new MapTile[1, 1]
+            TileMatrix = new DialogueMapTile[1, 1]
             {
-                { new MapTile(MOVEMENT_BLOCKED_DISPLAY_TEXT, MOVEMENT_BLOCKED_DISPLAY_TEXT) }
+                { new DialogueMapTile(MOVEMENT_BLOCKED_DISPLAY_TEXT, MOVEMENT_BLOCKED_DISPLAY_TEXT) }
             };
-            ActionToFunctionMap = GetActionToFunctionMap();
+            Actions = GetActions();
             PlayerOne = new Player();
-        }
-
-        public World(MapTile[,] tileMatrix, Player playerOne)
-        {
-            TileMatrix = tileMatrix;
-            ActionToFunctionMap = GetActionToFunctionMap();
-            PlayerOne = playerOne;
-        }
-
-        public World(MapTile[,] tileMatrix, Dictionary<string, Func<IEnumerable<string>>> actionToFunctionMap, Player playerOne)
-        {
-            TileMatrix = tileMatrix;
-            ActionToFunctionMap = actionToFunctionMap;
-            PlayerOne = playerOne;
         }
 
         #region Constants
 
         private readonly string MOVEMENT_BLOCKED_DISPLAY_TEXT = "A tall vast mountainous region blocks your path that is insurmountable.";
+        private readonly string MOVEMENT_COMPLETE_DISPLAY_TEXT = "You venture {0}.  The time is now {1}.";
         private readonly string PREPEND_HELP_TEXT = "You need to type an action (or exit), like any of the following:";
+        private readonly TimeSpan TIME_DELTA_ON_MOVEMENT = new TimeSpan(0, 15, 0);
 
         #endregion Constants
 
 
         #region Properties
 
-        MapTile[,] TileMatrix { get; set; }
-        Dictionary<string, Func<IEnumerable<string>>> ActionToFunctionMap { get; set; }
-        Player PlayerOne { get; set; }
+        [JsonIgnore]
+        public IMapTile[,] TileMatrix { get; set; }
+        public ActionCollection Actions { get; set; }
+        public Player PlayerOne { get; set; }
+        public DateTime CurrentDateTime { get; set; }
 
         #endregion Properties
 
@@ -50,90 +43,129 @@ namespace TextAdventureRpgLibrary
 
         public IEnumerable<string> GetResult(string actionText)
         {
-            string lowercaseActionText = actionText.ToLower().Replace(" ", string.Empty);
-            Func<IEnumerable<string>> callFunction;
-            bool actionExists = ActionToFunctionMap.TryGetValue(lowercaseActionText, out callFunction);
-            if(!actionExists)
+            IEnumerable<string> actionWordList = actionText.Split(' ');
+            string actionWord = actionWordList.First();
+            IEnumerable<string> additionalList = actionWordList.Skip(1);
+
+            var tileActionFunction = GetCurrentTile().Actions.GetActionFunction(actionWord);
+            if(tileActionFunction != null)
             {
-                return GetHelpText();
+                return tileActionFunction.Invoke(additionalList, this);
             }
-            return callFunction.Invoke();
+
+            var worldActionFunction = Actions.GetActionFunction(actionWord);
+            if(worldActionFunction != null)
+            {
+                return worldActionFunction.Invoke(additionalList, this);
+            }
+            return GetHelpText();
         }
 
         public IEnumerable<string> GetHelpText()
         {
-            return new string[] { $"{PREPEND_HELP_TEXT}{string.Join(',', ActionToFunctionMap.Keys)}" };
+            string worldActions = string.Join(",", Actions.GetActionList());
+            string tileActions = string.Join(",", GetCurrentTile().Actions.GetActionList());
+            return new string[] { $"{PREPEND_HELP_TEXT}{worldActions}", tileActions };
+        }
+
+        private IMapTile GetCurrentTile()
+        {
+            return TileMatrix[PlayerOne.XLocation, PlayerOne.YLocation];
         }
 
         public IEnumerable<string> GetArrivalText()
         {
-            return TileMatrix[PlayerOne.XLocation,PlayerOne.YLocation].ArrivalText;
+            return GetCurrentTile().ArrivalText;
         }
 
-        public IEnumerable<string> GetLookText()
+        public IEnumerable<string> GetLookText(IEnumerable<string> additionalInput, World world)
         {
-            return TileMatrix[PlayerOne.XLocation,PlayerOne.YLocation].LookText;
+            return GetCurrentTile().LookText;
         }
 
         public IEnumerable<string> DisplayActionList()
         {
-            return TileMatrix[PlayerOne.XLocation,PlayerOne.YLocation].ArrivalText;
+            return GetCurrentTile().ArrivalText;
         }
 
-        public IEnumerable<string> GoNorth()
+        public IEnumerable<string> GoNorth(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.YLocation == 0)
             {
                 return new string[] { MOVEMENT_BLOCKED_DISPLAY_TEXT };
             }
 
+            CurrentDateTime = CurrentDateTime.Add(TIME_DELTA_ON_MOVEMENT);
             PlayerOne.YLocation--;
-            return GetArrivalText();
+            string movementDialogue = string.Format(MOVEMENT_COMPLETE_DISPLAY_TEXT, "North", CurrentDateTime.ToString());
+            List<string> dialogueText = new List<string>() { movementDialogue };
+            dialogueText.AddRange(GetArrivalText());
+            return dialogueText;
         }
 
-        public IEnumerable<string> GoEast()
+        public IEnumerable<string> GoEast(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.XLocation == TileMatrix.GetLength(1) - 1)
             {
                 return new string[] { MOVEMENT_BLOCKED_DISPLAY_TEXT };
             }
 
+            CurrentDateTime = CurrentDateTime.Add(TIME_DELTA_ON_MOVEMENT);
             PlayerOne.XLocation++;
-            return GetArrivalText();
+            string movementDialogue = string.Format(MOVEMENT_COMPLETE_DISPLAY_TEXT, "East", CurrentDateTime.ToString());
+            List<string> dialogueText = new List<string>() { movementDialogue };
+            dialogueText.AddRange(GetArrivalText());
+            return dialogueText;
         }
 
-        public IEnumerable<string> GoSouth()
+        public IEnumerable<string> GoSouth(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.YLocation == TileMatrix.GetLength(1) - 1)
             {
                 return new string[] { MOVEMENT_BLOCKED_DISPLAY_TEXT };
             }
 
+            CurrentDateTime = CurrentDateTime.Add(TIME_DELTA_ON_MOVEMENT);
             PlayerOne.YLocation++;
-            return GetArrivalText();
+            string movementDialogue = string.Format(MOVEMENT_COMPLETE_DISPLAY_TEXT, "South", CurrentDateTime.ToString());
+            List<string> dialogueText = new List<string>() { movementDialogue };
+            dialogueText.AddRange(GetArrivalText());
+            return dialogueText;
         }
 
-        public IEnumerable<string> GoWest()
+        public IEnumerable<string> GoWest(IEnumerable<string> additionalInput, World world)
         {
             if (PlayerOne.XLocation == 0)
             {
                 return new string[] { MOVEMENT_BLOCKED_DISPLAY_TEXT };
             }
 
+            CurrentDateTime = CurrentDateTime.Add(TIME_DELTA_ON_MOVEMENT);
             PlayerOne.XLocation--;
-            return GetArrivalText();
+            string movementDialogue = string.Format(MOVEMENT_COMPLETE_DISPLAY_TEXT, "West", CurrentDateTime.ToString());
+            List<string> dialogueText = new List<string>() { movementDialogue };
+            dialogueText.AddRange(GetArrivalText());
+            return dialogueText;
         }
 
-        public Dictionary<string, Func<IEnumerable<string>>> GetActionToFunctionMap()
+        public IEnumerable<string> GetMirrorText(IEnumerable<string> additionalInput, World world)
         {
-            return new Dictionary<string, Func<IEnumerable<string>>>()
-            {
-                { MapAction.GoNorth.Value.ToLower().Replace(" ", string.Empty), GoNorth },
-                { MapAction.GoEast.Value.ToLower().Replace(" ", string.Empty), GoEast },
-                { MapAction.GoSouth.Value.ToLower().Replace(" ", string.Empty), GoSouth },
-                { MapAction.GoWest.Value.ToLower().Replace(" ", string.Empty), GoWest },
-                { MapAction.Look.Value.ToLower().Replace(" ", string.Empty), GetLookText }
-            };
+            return new string[] { $"You gaze into the mirror for some \"self-reflection.\"  " +
+                $"Location: {PlayerOne.XLocation}, {PlayerOne.YLocation}.  " +
+                $"Currency: {PlayerOne.Currency}.  " +
+                $"Potions: {PlayerOne.PotionCount}" };
+        }
+
+        public ActionCollection GetActions()
+        {
+            ActionCollection actionCollection = new ActionCollection();
+            actionCollection.Add(MapAction.GoNorth.Value, GoNorth);
+            actionCollection.Add(MapAction.GoEast.Value, GoEast);
+            actionCollection.Add(MapAction.GoSouth.Value, GoSouth);
+            actionCollection.Add(MapAction.GoWest.Value, GoWest);
+            actionCollection.Add(MapAction.Look.Value, GetLookText);
+            actionCollection.Add(MapAction.Mirror.Value, GetMirrorText);
+            return actionCollection;
         }
 
         #endregion Methods
