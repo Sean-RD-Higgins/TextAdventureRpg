@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TextAdventureRpgWebApp/bin/TextAdventureRpgLibrary.dll
+/TextAdventureRpgWebApp/bin/TextAdventureRpgLibrary.pdb
+/TextAdventureRpgWebApp/bin/TextAdventureRpgWebApp.dll
+/TextAdventureRpgWebApp/bin/TextAdventureRpgWebApp.pdb
+/TextAdventureRpgWebApp/obj/Debug/DotNetFrameworkWebApp.csproj.AssemblyReference.cache
+/TextAdventureRpgWebApp/obj/Debug/TextAdventureRpgWebApp.csproj.AssemblyReference.cache
+/TextAdventureRpgWebApp/obj/Debug/TextAdventureRpgWebApp.dll
+/TextAdventureRpgWebApp/obj/Debug/TextAdventureRpgWebApp.pdb
+/TextAdventureRpgWebApp/obj/Release/TextAdventureRpgWebApp.csproj.AssemblyReference.cache

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextAdventureRpgLibrary", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextAdventureRpgTestProject", "TextAdventureRpgTestProject\TextAdventureRpgTestProject.csproj", "{BF490A30-AA6C-43A7-A922-E65BF20E2F35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAdventureRpgWebApp", "TextAdventureRpgWebApp\TextAdventureRpgWebApp.csproj", "{33F718D0-1718-40C1-85F4-0C6A7A5FA43A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetFrameworkWebApp", "TextAdventureRpgWebApp\DotNetFrameworkWebApp.csproj", "{33F718D0-1718-40C1-85F4-0C6A7A5FA43A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
