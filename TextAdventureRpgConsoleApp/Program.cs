@@ -8,6 +8,11 @@ namespace TextAdventureRpgConsoleApp
     {
         static void Main(string[] args)
         {
+            if (args != null && args.Length > 0)
+            {
+                Console.WriteLine($"Unsupported arguments {String.Join(",", args)}");
+            }
+
             Console.WriteLine("Text Adventure RPG - Version 1");
 
             IMapTile[,] tileMatrix = new IMapTile[3, 3];

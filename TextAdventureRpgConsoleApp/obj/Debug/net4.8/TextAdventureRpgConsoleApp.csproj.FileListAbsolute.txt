@@ -1,0 +1,15 @@
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net4.8\TextAdventureRpgConsoleApp.exe.config
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net4.8\TextAdventureRpgConsoleApp.exe
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net4.8\TextAdventureRpgConsoleApp.pdb
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net4.8\Newtonsoft.Json.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net4.8\TextAdventureRpgLibrary.dll
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\bin\Debug\net4.8\TextAdventureRpgLibrary.pdb
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.csproj.AssemblyReference.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.AssemblyInfo.cs
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.sourcelink.json
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdve.893408BA.Up2Date
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.exe
+C:\Users\Seans\Source\Repos\Sean-RD-Higgins\TextAdventureRpg\TextAdventureRpgConsoleApp\obj\Debug\net4.8\TextAdventureRpgConsoleApp.pdb

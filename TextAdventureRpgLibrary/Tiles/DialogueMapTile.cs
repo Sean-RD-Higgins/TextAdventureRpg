@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace TextAdventureRpgLibrary
 {
+    [Serializable]
     public class DialogueMapTile : IMapTile
     {
         public DialogueMapTile()

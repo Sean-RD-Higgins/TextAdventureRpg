@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextAdventureRpgLibrary
 {
+    [Serializable]
     public class ActionCollection
     {
         public ActionCollection()
@@ -13,7 +14,7 @@ namespace TextAdventureRpgLibrary
             _actionToFunctionMap = new Dictionary<string, Func<IEnumerable<string>, World, IEnumerable<string>>>();
         }
 
-        private Dictionary<string, Func<IEnumerable<string>, World, IEnumerable<string>>> _actionToFunctionMap;
+        private readonly Dictionary<string, Func<IEnumerable<string>, World, IEnumerable<string>>> _actionToFunctionMap;
 
         public string[] GetActionList()
         { 
@@ -27,7 +28,11 @@ namespace TextAdventureRpgLibrary
 
         public Func<IEnumerable<string>, World, IEnumerable<string>> GetActionFunction(string actionText)
         {
-            return _actionToFunctionMap.GetValueOrDefault(CleanseKey(actionText), null);
+            if (_actionToFunctionMap.ContainsKey(CleanseKey(actionText)))
+            {
+                return _actionToFunctionMap[CleanseKey(actionText)];
+            }
+            return null;
         }
 
         private string CleanseKey(string key)

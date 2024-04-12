@@ -1,5 +1,8 @@
-﻿namespace TextAdventureRpgLibrary
+﻿using System;
+
+namespace TextAdventureRpgLibrary
 {
+    [Serializable]
     public class Player
     {
         public int XLocation { get; set; }
